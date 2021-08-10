@@ -1,16 +1,15 @@
-# jdfkdjf
+# djfkjdf
 
   [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
      
   ## Description
-  jdkfjkdf
+  djfkdjf
   
   ## Table of Contents
-  [Getting started with Markdown](#getting-started-with-markdown)
   * [Installation](#Installation)
   * [Usage](#Usage)
   * [License](#License)
-  * [contribute](#Contributing)
+  * [Contribute](#Contributing)
   * [Tests](#Tests)
   * [Questions](#Questions)
   
@@ -18,25 +17,24 @@
   To install the necessary dependencies, run the following command:
 
   ```
-  jdkfjdf 
+  dkdjf 
   ```
   
-  ## Usage
-  jdfkdfj
+  ## <a name="usage"/>Usage
+  jdfkjdkf
 
-  ## License
-  [Markdown - Summary](#Getting-started-with-Markdown)
+  ## <a name="license"/>License
   This project is licensed under the GPL 3.0 license.
 
   ## Contributing
-  djfkdjfk
+  jdfkdjf
 
   ## Tests
   To run the tests, run the following command;
 
   ```
-  jdkjdkf
+  jdfjdkf
   ```
 
   ## Questions
-  If you have any questions about the repo, open an issue or directly contact me at <djfkdjf> You can find my other work at [djfkdf](https://github.com/djfkdf)
+  If you have any questions about the repo, open an issue or directly contact me at <v.opatha@gmail.com> You can find my other work at [vish-opa](https://github.com/vish-opa)

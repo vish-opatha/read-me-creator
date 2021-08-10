@@ -1,4 +1,3 @@
-
 var licenseBadge="";
 var licenseSection="";
 // TODO: Create a function that returns a license badge based on which license is passed in
@@ -68,14 +67,14 @@ function generateMarkdown(data) {
   ${data.proDecription}
   
   ## Table of Contents
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [License](#license)
-  * [contribute](#contribute)
-  * [Tests](#test)
-  * [Questions](#questions)
+  * [Installation](#Installation)
+  * [Usage](#Usage)
+  * [License](#License)
+  * [Contribute](#Contributing)
+  * [Tests](#Tests)
+  * [Questions](#Questions)
   
-  ## <a name="installation"/>Installation
+  ## Installation
   To install the necessary dependencies, run the following command:
 
   \`\`\`
