@@ -1,3 +1,4 @@
+let markDown="";
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {}
@@ -12,32 +13,42 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  let markDown = ``# ${data.title}
+  var markDown = 
+  `# ${data.proName}
+   
+  ## Description
+  ${data.proDecription}
+  
+  ## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [contribute](#contribute)
+  * [Tests](#test)
+  * [Questions](#questions)
+  
+  ## <a name="installation"/>Installation
+  To install the necessary dependencies, run the following command:
+  ${data.proDependencies} 
+  
+  ## <a name="usage"/>Usage
+  ${data.proRepo}
 
-  `
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">Hi! My name is ${answers.name}</h1>
-      <p class="lead">I am from ${answers.location}.</p>
-      <h3>Example heading <span class="badge badge-secondary">Contact Me</span></h3>
-      <ul class="list-group">
-        <li class="list-group-item">My GitHub username is ${answers.github}</li>
-        <li class="list-group-item">LinkedIn: ${answers.linkedin}</li>
-      </ul>
-    </div>
-  </div>
-  </body>
-  </html>`;
-  return `# ${data.title}
+  ## <a name="license"/>License
+  This project is licensed under the ${data.proLicence}license.
 
-`;
+  ## <a name="contribute"/>Contributing
+  ${data.proContribution}
+
+  ## <a name="test"/>Tests
+  To run the tests, run the following command;
+  ${data.proTest}
+
+  ## <a name="questions"/>Questions
+  If you have any questions about the repo, open an issue or directly contact me at <${data.uEmail}> You can find my other work at [${data.uName}](https://github.com/${data.uName})`
+;
+
+  return markDown;
 }
 
 module.exports = generateMarkdown;
