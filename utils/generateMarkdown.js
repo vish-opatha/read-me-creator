@@ -1,5 +1,6 @@
-// let markDown="";
+
 var licenseBadge="";
+var licenseSection="";
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string 'MIT', 'Apache 2.0', 'GPL 3.0','BSD 3','None'
 function renderLicenseBadge(license) {
@@ -29,7 +30,6 @@ function renderLicenseBadge(license) {
       lib="";
       break;
   }
-
   return lib;
 }
 
@@ -41,17 +41,29 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  let lc="";
+  if((license ==='None') || (license ==="")){
+    lc = `This project is not categorised under any license.`;
+  }
+
+  else {
+    lc = `This project is licensed under the ${license} license.`;
+  }
+
+  return lc;
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   licenseBadge = renderLicenseBadge(data.proLicence);
+  licenseSection = renderLicenseSection(data.proLicence);
 
   var markDown = 
   `# ${data.proName}
 
-  ${renderLicenseBadge(data.proLicence)}
-   
+  ${licenseBadge}
+     
   ## Description
   ${data.proDecription}
   
@@ -65,22 +77,28 @@ function generateMarkdown(data) {
   
   ## <a name="installation"/>Installation
   To install the necessary dependencies, run the following command:
+
+  \`\`\`
   ${data.proDependencies} 
+  \`\`\`
   
   ## <a name="usage"/>Usage
   ${data.proRepo}
 
   ## <a name="license"/>License
-  This project is licensed under the ${renderLicenseBadge(data.proLicence)}license.
+  ${licenseSection}
 
-  ## <a name="contribute"/>Contributing
+  ## Contributing
   ${data.proContribution}
 
-  ## <a name="test"/>Tests
+  ## Tests
   To run the tests, run the following command;
-  ${data.proTest}
 
-  ## <a name="questions"/>Questions
+  \`\`\`
+  ${data.proTest}
+  \`\`\`
+
+  ## Questions
   If you have any questions about the repo, open an issue or directly contact me at <${data.uEmail}> You can find my other work at [${data.uName}](https://github.com/${data.uName})`
 ;
 
