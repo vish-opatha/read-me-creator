@@ -81,10 +81,10 @@ function generateMarkdown(data) {
   ${data.proDependencies} 
   \`\`\`
   
-  ## <a name="usage"/>Usage
+  ## Usage
   ${data.proRepo}
 
-  ## <a name="license"/>License
+  ## License
   ${licenseSection}
 
   ## Contributing
@@ -98,8 +98,7 @@ function generateMarkdown(data) {
   \`\`\`
 
   ## Questions
-  If you have any questions about the repo, open an issue or directly contact me at <${data.uEmail}> You can find my other work at [${data.uName}](https://github.com/${data.uName})`
-;
+  If you have any questions about the repo, open an issue or directly contact me at <${data.uEmail}> You can find my other work at [${data.uName}](https://github.com/${data.uName})`;
 
   return markDown;
 }
