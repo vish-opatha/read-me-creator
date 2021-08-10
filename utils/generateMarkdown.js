@@ -1,11 +1,43 @@
-let markDown="";
+// let markDown="";
+var licenseBadge="";
 // TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+// If there is no license, return an empty string 'MIT', 'Apache 2.0', 'GPL 3.0','BSD 3','None'
+function renderLicenseBadge(license) {
+  let lib="";
+  switch (license) {
+    case 'MIT':
+      lib = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+      break;
+
+    case 'Apache 2.0':
+      lib = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
+      break;
+
+    case 'GPL 3.0':
+      lib = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
+      break;
+
+    case 'BSD 3':
+      lib = '[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)';
+      break;
+
+    case 'Apache 2.0':
+      lib = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
+      break;
+
+    default:
+      lib="";
+      break;
+  }
+
+  return lib;
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  // Above function is has both functionalities included. Therefore there is no definition for this function.
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -13,8 +45,12 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  licenseBadge = renderLicenseBadge(data.proLicence);
+
   var markDown = 
   `# ${data.proName}
+
+  ${renderLicenseBadge(data.proLicence)}
    
   ## Description
   ${data.proDecription}
@@ -35,7 +71,7 @@ function generateMarkdown(data) {
   ${data.proRepo}
 
   ## <a name="license"/>License
-  This project is licensed under the ${data.proLicence}license.
+  This project is licensed under the ${renderLicenseBadge(data.proLicence)}license.
 
   ## <a name="contribute"/>Contributing
   ${data.proContribution}
