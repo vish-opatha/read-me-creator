@@ -1,7 +1,7 @@
 var licenseBadge="";
 var licenseSection="";
 // TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string 'MIT', 'Apache 2.0', 'GPL 3.0','BSD 3','None'
+// If there is no license, return an empty string 
 function renderLicenseBadge(license) {
   let lib="";
   switch (license) {
