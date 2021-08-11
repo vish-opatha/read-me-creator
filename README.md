@@ -18,9 +18,9 @@
   ## Mock-up
   Following images shows the way of getting user inputs and the final README file that is created with the user inputs.
 
-  ![Desktop View](./images/command-line.JPG)
+  ![Command line input](./images/command-line.JPG)
 
-  ![Responsive View](./images/readme-preview)  
+  ![Final readme file](./images/readme-preview.JPG)  
 
   ## Installation
   Before the user starts this application, user needs to install the necessary dependencies, and for that run the following command:
