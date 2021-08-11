@@ -6,8 +6,11 @@
   This simple command line application facilitates the user to create a professional Readme file according to his/her requirement. It saves a lot of time by generating the markdown syntax automatically, which otherwise need to be written manually by the user. 
   
   ## Table of Contents
+  * [Important Links](#Important-Links)
+  * [Mock-up](#Mock-up)
   * [Installation](#Installation)
-  * [Technical Work Done](#Technical-Work-Done)
+  * [Technical Acceptance Work Done](#Technical-Acceptance-Work-Done)
+  * [Repository Quality Work Done](#Repository-Quality-Work-Done)
   * [Questions](#Questions)
   
   ## Important Links
@@ -17,8 +20,11 @@
 
   ## Mock-up
   Following images shows the way of getting user inputs and the final README file that is created with the user inputs.
+  *Command line for user input*
 
   ![Command line input](./images/command-line.JPG)
+
+  *README file generated with inputs*
 
   ![Final readme file](./images/readme-preview.JPG)  
 
