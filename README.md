@@ -5,7 +5,7 @@
   ## Description
   This project is useful in creating a professional README file by using the user inputs
 
-  ![Alt Text](./video.gif)
+  ![Alt Text](https://drive.google.com/file/d/1yA7MzbWLxi6El60amc_qyMcDRM3ogJHW/view?usp=sharing)
   
   ## Table of Contents
   * [Installation](#Installation)
